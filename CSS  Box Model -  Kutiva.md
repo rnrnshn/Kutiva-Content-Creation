@@ -58,22 +58,22 @@ Nesta caixa, o espaço entre o Content e o border é chamado de Padding e o espa
 
 **Content** - é o conteúdo que escrevemos entre as tags e alguns atributos HTML. O conteúdo depende do tipo de elementos como vimos acima, pode inline-element ou block-element.
 
-![image-20220208231043581](/home/rnrnshn/.config/Typora/typora-user-images/image-20220208231043581.png)
+![image-20220208231043581](/images/image-20220208231043581.png)
 
 
 
 **Padding** - o padding é o espaçamento localizado entre o conteúdo e a borda. O padding cria um espaço extra dentro do elemento. Podemos aplicar o padding em todos os lados do elementos: top, right, bottom e left.
 
-![image-20220208231220684](/home/rnrnshn/.config/Typora/typora-user-images/image-20220208231220684.png)
+![image-20220208231220684](/images/image-20220208231220684.png)
 
 
 
 **Border** - define o estilo da borda de um elemento. Que é a fronteira entre o margin e o padding.
 
-![image-20220208231443883](/home/rnrnshn/.config/Typora/typora-user-images/image-20220208231443883.png)
+![image-20220208231443883](/images/image-20220208231443883.png)
 
 **Margin** - o margin é o espaçamento localizado do lado de fora da borda. O margin é o espaçamento ao redor do elemento. Tal como o padding, o margin tambem pode ser aplicado em todos os lados do elemento: top, right, bottom e left. O margin influencia no espaçamento entre um elemento e demais elementos ao seu redor. 
 
-![image-20220208231303214](/home/rnrnshn/.config/Typora/typora-user-images/image-20220208231303214.png)
+![image-20220208231303214](/images/image-20220208231303214.png)
 
 # [Demostração no codepen]
