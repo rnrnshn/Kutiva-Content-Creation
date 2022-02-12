@@ -18,7 +18,7 @@ De forma sinples, **Custom Properties** permitem-nos armazenar valores de propri
 
 Como podemos ver a sintaxe é simples, para criarmos uma custom property so temos que iniciar a nossa variável dentro de um selector CSS com -- seguido do nome da variável e por fim o valor que queremos armazenar. E para utilizarmos a variável so precisamos escrever a função var() e o nome da variavel que queremos re-utilizar como argumento da função var(--nomeDaVariavel).
 
-![image-20220209173638202](/home/rnrnshn/.config/Typora/typora-user-images/image-20220209173638202.png)
+![](/home/rnrnshn/Documents/Kutiva/images/image-20220209173638202.png)
 
 
 
@@ -26,7 +26,7 @@ Como podemos ver a sintaxe é simples, para criarmos uma custom property so temo
 
 1. **Case Sensitive** 
 
-   ![image-20220209111506164](/home/rnrnshn/.config/Typora/typora-user-images/image-20220209111506164.png)
+   ![](/home/rnrnshn/Documents/Kutiva/images/image-20220209111506164.png)
 
    
 
@@ -34,7 +34,7 @@ Como podemos ver a sintaxe é simples, para criarmos uma custom property so temo
 
    Notem que selector dado a regra CSS define o escopo em que a custom property pode ser utilizada. Uma prática comum é definir as variáveis na pseudo-classe :root, para que possa ser aplicada globalmente em todo o seu documento HTML. Mas também é aconselhável limitar o escopo das suas variáveis.
 
-   ![image-20220209172646403](/home/rnrnshn/.config/Typora/typora-user-images/image-20220209172646403.png)
+   ![](/home/rnrnshn/Documents/Kutiva/images/image-20220209172646403.png)
 
    
 
@@ -42,9 +42,7 @@ Como podemos ver a sintaxe é simples, para criarmos uma custom property so temo
 
    As variaveis são afectadas pelo conceito de herança em CSS. Isto significa que se não for definido um valor para uma variavel num determinado elemento, é utilizado o valor do elemento que o contem. No exemplo abaixo definimos a cor com a variável text-color e aplicamos a cor do texto do elemento header, sendo assim o elemento nav herdara a cor de texto do elemento header ja que nele esta contigo.
    
-   ![image-20220209173159943](/home/rnrnshn/.config/Typora/typora-user-images/image-20220209173159943.png)
-
-
+   ![](/home/rnrnshn/Documents/Kutiva/images/image-20220209173159943.png)
 
 ### Vantagens de usar Custom Properties
 
@@ -64,7 +62,7 @@ Agora vamos ver 4 formas de aplicarmos as variáveis css nos nossos projectos. L
 
 Essa talvez seja uma das aplicações mais comuns de ver as custom properties serem usadas. Organizar a paleta de cores do projecto num único lugar e poder reutilizar essas cores ao longo do projecto.
 
-![image-20220209180446834](/home/rnrnshn/.config/Typora/typora-user-images/image-20220209180446834.png)
+![](/home/rnrnshn/Documents/Kutiva/images/image-20220209180446834.png)
 
 
 
@@ -72,19 +70,17 @@ Essa talvez seja uma das aplicações mais comuns de ver as custom properties se
 
 Custom properties podem nos ajudar a criar Grid layouts complexos, responsivos e fáceis de manter. Imagine que quiséssemos criar uma grid de 8 colunas e num certo breakpoint quiséssemos transformar essa 8 column-grid em 12-column-grid.
 
-![image-20220209180705373](/home/rnrnshn/.config/Typora/typora-user-images/image-20220209180705373.png)
+![](/home/rnrnshn/Documents/Kutiva/images/image-20220209180705373.png)
 
 ### Repeated Values
 
 Suponhamos que temos um elemento que 100px de padding-top e todos os outros valores são os mesmo, o padding-top é consistente em todos os breakpoints mas os outros valores carecem de mudança. Uma das formas de resolver esse problema seria modificar os outros valores em cada breakpoint. Isso seria muito trabalhoso. 
 
-![image-20220209182923331](/home/rnrnshn/.config/Typora/typora-user-images/image-20220209182923331.png)
+![](/home/rnrnshn/Documents/Kutiva/images/image-20220209182923331.png)
 
 Ao invés de modificarmos os valores em todos os breakpoints poderíamos criar uma variável que armazenasse esses valores e so modificaríamos o valor em uma linha de código
 
-![image-20220209183511534](/home/rnrnshn/.config/Typora/typora-user-images/image-20220209183511534.png)
-
-![image-20220209183536304](/home/rnrnshn/.config/Typora/typora-user-images/image-20220209183536304.png)
+![](/home/rnrnshn/Documents/Kutiva/images/image-20220209183511534.png)
 
 
 
@@ -92,7 +88,7 @@ Ao invés de modificarmos os valores em todos os breakpoints poderíamos criar u
 
 Se usarmos propriedades shorthands como border ou qualquer outra, e queremos mudar um valor dentro dessa propriedade shorthand em um outro elemento, ter que reescrever a propriedade de novo é muito tedioso. Usando Custom Properties, podemos alterar valores de shorthand properties sem ter que reescrever toda a proprieade. 
 
-![image-20220209213547559](/home/rnrnshn/.config/Typora/typora-user-images/image-20220209213547559.png)
+![](/home/rnrnshn/Documents/Kutiva/images/image-20220209213547559.png)
 
 
 
@@ -108,7 +104,7 @@ Neste exemplo aplicamos uma cor verde claro a todos os paragrafos usando a funç
 
 No segundo paragrafo queremos a alterar a cor de fundo, não precisamos reescrever a função toda. Somente pegar a variavel responsavel por alterar a cor e atualizar com a cor desejada, nesse caso o vermelho escuro. E olha que o mais interessante disso é que nem precisamos especificar a propriedade que queremos aplicar ao segundo paragrafo, a nossa variavel serve como uma custom property (duplo sentido). LOL
 
-![image-20220209215535415](/home/rnrnshn/.config/Typora/typora-user-images/image-20220209215535415.png)
+![](/home/rnrnshn/Documents/Kutiva/images/image-20220209215535415.png)
 
 
 
