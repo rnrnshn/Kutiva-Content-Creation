@@ -32,12 +32,16 @@ Como podemos ver a sintaxe é simples, para criarmos uma custom property so temo
 
 2. **Escopo**
 
+   Notem que selector dado a regra CSS define o escopo em que a custom property pode ser utilizada. Uma prática comum é definir as variáveis na pseudo-classe :root, para que possa ser aplicada globalmente em todo o seu documento HTML. Mas também é aconselhável limitar o escopo das suas variáveis.
+
    ![image-20220209172646403](/home/rnrnshn/.config/Typora/typora-user-images/image-20220209172646403.png)
 
    
 
 3. **Herança**
 
+   As variaveis são afectadas pelo conceito de herança em CSS. Isto significa que se não for definido um valor para uma variavel num determinado elemento, é utilizado o valor do elemento que o contem. No exemplo abaixo definimos a cor com a variável text-color e aplicamos a cor do texto do elemento header, sendo assim o elemento nav herdara a cor de texto do elemento header ja que nele esta contigo.
+   
    ![image-20220209173159943](/home/rnrnshn/.config/Typora/typora-user-images/image-20220209173159943.png)
 
 
@@ -49,7 +53,6 @@ Como podemos ver a sintaxe é simples, para criarmos uma custom property so temo
 3. Podemos manipular usando JavaScript
 4. Podemos usar em estilos inline
 5. Sintaxe fácil embora um pouco verbosa
-6. Só funcionam nos valores das propriedades
 
 ## Quatro Use cases
 
@@ -96,6 +99,14 @@ Se usarmos propriedades shorthands como border ou qualquer outra, e queremos mud
 ### Color Functions
 
 Como vimos no exemplo acima, custom properties não representam somente todos os valores de uma propriedade mas tambem podemos usar para armazenar valores parcialmente. Tendo isso em mente podemos criar Funções para manipular cores em CSS. Uma das formas mais comuns de criar esse tipo de funções é usando a função HSLA para manipular cores em CSS. 
+
+HSLA é uma função que nos permite determinar a cor nos nossos selectores CSS, seja cor de borda, cor de fundo ou cor de texto. Esssa função tem o formato H - S - L - A. Ela admite quatro parâmetros, que definem **H**ue = tom, **S**aturation = saturação e **L**ightness = luminosidade da cor.
+
+O primeiro parâmetro **H**, define o tom (hue) da cor. O segundo parâmetro **S**, define a saturação (saturation), o terceiro **L**, define a luminosidade(lightness) da cor e por fim o ultimo parâmetro **A** que é um canal Alpha que define a opacidade da cor. Mais sobre as funções de cores CSS num video futuro. 
+
+Neste exemplo aplicamos uma cor verde claro a todos os paragrafos usando a função HSLA, mas notem que ao inves de usar os valores dos parametros HSLA somente, criamos variaveis que armazenam esses valores para possivel re-utilização dessas variaveis de modo a poder modificar os parametros. 
+
+No segundo paragrafo queremos a alterar a cor de fundo, não precisamos reescrever a função toda. Somente pegar a variavel responsavel por alterar a cor e atualizar com a cor desejada, nesse caso o vermelho escuro. E olha que o mais interessante disso é que nem precisamos especificar a propriedade que queremos aplicar ao segundo paragrafo, a nossa variavel serve como uma custom property (duplo sentido). LOL
 
 ![image-20220209215535415](/home/rnrnshn/.config/Typora/typora-user-images/image-20220209215535415.png)
 
