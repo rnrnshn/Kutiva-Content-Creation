@@ -34,7 +34,7 @@ Quando aprendemos HTML há uma serie de novos conceitos que aprendemos e neste v
 
 Primeiro, elementos HTML são componentes que definem objectos da página tais como parágrafos(p), links(a), cabeçalhos(h1, h2, h3, h4, h5, h6) e.t.c.
 
-As tags HTML definem os elementos HTML. As tags são envolvidas entre símbolos de < e >. Esses símbolos geralmente contem o nome da tag HTML e usualmente vem em pares: Tags de abertura <h1> e tags de fechamento </h1>.
+As tags HTML definem os elementos HTML. As tags são envolvidas entre símbolos de < e >. Esses símbolos geralmente contem o nome da tag HTML e usualmente vem em pares: Tags de abertura e tags de fechamento.
 
 ```html
 <p> Isto é um paragrafo </p>
